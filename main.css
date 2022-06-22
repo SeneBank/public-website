@@ -441,8 +441,8 @@ select * {
 /* Formulaire de demande d'aide !  */
 
 .form-container{
-    height: 550px;
-    max-height: 550px;
+    /* height: 550px; */
+    min-height: 550px;
     width: 100%;
 }
 
@@ -612,4 +612,12 @@ select * {
     form *:focus{
         outline: none;
     }
+}
+
+/* Bas de page */ 
+
+footer{
+    height: 520px;
+    width: 100%;
+    background: #1D0D44;
 }
