@@ -402,8 +402,14 @@ header{
 
 }
 
+.map-search input[type=button]{
+    font-size: 18px;
+}
+
 select{
     color: #000;
+    height: 50px;
+    font-size: 18px;
 }
 select * {
     color: #000;
@@ -432,7 +438,8 @@ select * {
     }
 
     select{
-        height: 40px;
+        height: 50px;
+        width: 100%;
         font-size: 18px;
     }
 }
@@ -494,6 +501,8 @@ select * {
         font-size: 18px;
         padding-left: 10px;
         width: 100%;
+        border: 1px solid #1D0D44;
+        border-radius: 5px;
     }
 @media screen and (max-width: 960px){
     
