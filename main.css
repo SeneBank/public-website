@@ -61,6 +61,8 @@ nav a:focus, nav a:hover{
         display: flex;
         flex-direction: row;
         column-gap: 15px;
+        align-items: center;
+        margin: 0;
     }
     .user-action{
         display: flex;
@@ -97,7 +99,7 @@ nav a:focus, nav a:hover{
     }
 
     .logo{
-        display: none;
+        /* display: none; */
     }
     .menu{
         width: 100vw;
@@ -163,7 +165,7 @@ header{
 
 @media screen and (max-width: 500px) {
     .header-title{
-        font-size: 24px;
+        font-size: 26px;
     }
 }
 
@@ -501,7 +503,7 @@ select * {
 
 .help-form input[type=text]{
     border-radius: 5px;
-    border: 1px solid #1D0D44;
+    border: 1px solid #C4C4C4;
     font-size: 18px;
     padding-left: 10px;
 }
@@ -511,7 +513,7 @@ select * {
         font-size: 18px;
         padding-left: 10px;
         width: 100%;
-        border: 1px solid #1D0D44;
+        border: 1px solid #C4C4C4;
         border-radius: 5px;
     }
 @media screen and (max-width: 960px){
