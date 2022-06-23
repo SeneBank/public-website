@@ -8,6 +8,8 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/build/ol.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.14.1/css/ol.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./main.css">            
     <title>Bienvenue sur votre banque en ligne ! </title>
@@ -30,7 +32,7 @@
         </ul>
     </div>
     <div class="user-action">
-        <a  href="#" class="connexion">Se connecter</a>
+        <a  href="./signin.html" class="connexion">Se connecter</a>
         <a href="#" class="inscription">Ouvrir un compte</a>
     </div>
 </nav>
@@ -47,7 +49,7 @@
     <p>Nos Services</p>
 
     <div class="service-container">
-        <div data-aos="fade-right" data-aos-duration="1500" class="rectangle">
+        <div data-aos="fade-right" data-aos-duration="500" class="rectangle">
             <img src="./assets/images/deposit.jpg" class="service-image"/>
             <p class="service-title">Depot d'argent</p>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
@@ -56,14 +58,14 @@
         </div>
         <div data-aos="fade-left"
         data-aos-easing="linear"
-        data-aos-duration="1500" class="rectangle">
+        data-aos-duration="500" class="rectangle">
             <img src="./assets/images/sendMoney.png" class="service-image"/>
             <p class="service-title" >Transfert d'argent</p>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
                 </p>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1500" class="rectangle">
+        <div data-aos="fade-right" data-aos-duration="500" class="rectangle">
             <img src="./assets/images/bank-smartphone.jpg" class="service-image"/>
             <p class="service-title">Retrait par carte</p>
             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
@@ -90,12 +92,12 @@ data-aos-duration="2000" class="card-container">
 </section>
 
 <section class="map-container">
-    <h3 class="map-title">Nos points de retrait</h3>
-    <div class="map">
+    <h3 class="map-title">Nos agences</h3>
+    <div id="map" class="map">
 
     </div>
     <div class="map-search">
-        <p class="search-indication">Rechercher une agence ou un point de retrait</p>
+        <p class="search-indication">Rechercher une agence</p>
         <div class="search-zone form-group">
 
             <select name="" id="">
@@ -108,9 +110,8 @@ data-aos-duration="2000" class="card-container">
                 <option value="">Selectionner un filtre de recherche</option>
                 <option value="dakar">Le plus proche</option>
                 <option value="abidjan">Le plus loin</option>
-                <!-- <option value="cotonou">Cotonou</option> -->
             </select>
-            <input class="btn btn-primary" type="button" value="Rechercher">
+            <input class="btn " type="button" value="Rechercher">
         </div>
     </div>
 </section>
@@ -231,6 +232,7 @@ data-aos-duration="2000" class="card-container">
 </body>
 
 <script src="./main.js"></script>
+<script src="./map.js"></script>
 
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>

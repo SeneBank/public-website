@@ -14,7 +14,8 @@ body{
 /* The navigation bar style */
 nav{
     width: 100%;
-    background-color: #1D0D44;
+    /* background-color: #1D0D44; */
+    /* background-color: #273B5E; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -23,6 +24,21 @@ nav{
     position: relative;
     transition: all ease 1s;
     z-index: 100;
+
+    background-color: hsl(218, 41%, 15%);
+    /* background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%); */
+  
 }
 .menu ul{
     list-style: none;
@@ -106,6 +122,8 @@ nav a:focus, nav a:hover{
         position: absolute;
         top: 100px;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .menu ul{
         width: 100%;
@@ -198,7 +216,7 @@ header{
 .rectangle{
     height: 330px;
     width: 360px;
-    background-color: #1D0D44;
+    background-color: hsl(218, 41%, 15%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -208,6 +226,7 @@ header{
     text-align: center;
     padding: 10px;
     border-radius: 5px;
+    /* box-shadow: 0 0 7px #fff; */
 }
 
 .service-image{
@@ -251,7 +270,9 @@ header{
 @media screen  and (max-width: 1110px){
 
     .services{
-        background-color: #1D0D44;
+        /* background-color: #1D0D44;
+         */
+         background-color: #273B5E;
         padding-bottom: 50px;
     }
     .services >p{
@@ -395,7 +416,6 @@ header{
 .map{
     width: 100%;
     height: 550px;
-    background-color: #9569EA;
 
 }
 .search-indication{
@@ -420,9 +440,16 @@ select{
     color: #000;
     height: 50px;
     font-size: 18px;
+    text-align: center;
 }
 select * {
     color: #000;
+}
+
+.search-zone input{
+    background: #5E5BFF;
+border: 1px solid #5E5BFF;
+color: #fff;
 }
 @media screen and (min-width:500px) {
     .search-zone{
@@ -718,7 +745,8 @@ body {
   
   .footer-48201 {
     padding: 7rem 0;
-    background: #1D0D44;
+    /* background-color: #273B5E; */
+    background-color: hsl(218, 41%, 15%);
     color: #777; }
     .footer-48201 .footer-site-logo {
       font-size: 1.5rem;
@@ -746,12 +774,6 @@ body {
       border-top: 1px solid #fff; }
   @media screen  and (max-width: 500px){
     footer * {
-        /* display: flex; */
-        /* flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center; */
         text-align: center;
     }
   }
